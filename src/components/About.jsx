@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import Tilt2 from "react-tilt";
+import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../constants";
@@ -9,7 +9,7 @@ import { SectionWrapper } from "../hoc";
 const ServiceCard = ({ index, title, icon }) => {
   const tiltref = useRef(null)
   return (
-    <Tilt2 ref={tiltref} className="xs:w-[280px] w-full">
+    <Tilt ref={tiltref} className="xs:w-[280px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => {
           {/* <h3 className="text-white text-[20px] font-bold text-center">{title}</h3> */}
         </div>
       </motion.div>
-    </Tilt2>
+    </Tilt>
   );
 }
 
