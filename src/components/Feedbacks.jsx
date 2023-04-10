@@ -69,18 +69,18 @@ const Feedbacks = () => {
     //   </div>
 
     //  </div>
-    <div className="flex gap-4 justify-center">
-     <div className="border rounded-lg p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card" style={{ borderImage: 'linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%) 1' }}>
+    <div className="flex flex-wrap gap-4 justify-center">
+     <div className="border p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card" >
         <h2 className="text-center">Total Productions Last Year</h2>+ 100
       </div>
-      <div className="border rounded-lg p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card" style={{ borderImage: 'linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%) 1' }}>
+      <div className="border  p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card">
         <h2 className="text-center">Total Audio <br /> Streams</h2>
-        <div className="flex bg-tertiary">
+        <div className="flex bg-tertiary ">
           <h1>+</h1>
           <Contador id="contador2" start={6800000} increment={3} />
         </div>
       </div>
-      <div className="border rounded-lg p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card" style={{ borderImage: 'linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%) 1' }}>
+      <div className="border  p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card">
         <h2 className="text-center">Total Youtube Audio Streams</h2>
         <div className="flex">
           <h1>+</h1>
