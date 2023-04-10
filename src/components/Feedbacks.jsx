@@ -69,7 +69,7 @@ const Feedbacks = () => {
     //   </div>
 
     //  </div>
-    <div className="flex flex-wrap gap-4 justify-center">
+    <div className="flex flex-wrap gap-4 justify-center flex-col sm:flex-row ">
      <div className="border p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card" >
         <h2 className="text-center">Total Productions Last Year</h2>+ 100
       </div>
