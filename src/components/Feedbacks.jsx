@@ -28,24 +28,6 @@ import { testimonials } from "../constants";
 //   </motion.div>
 // )
 
-function Contador(props) {
-  const [count, setCount] = useState(
-    localStorage.getItem(props.id) || props.start
-  );
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount((count) => {
-        const newCount = parseInt(count, 10) + props.increment;
-        localStorage.setItem(props.id, newCount);
-        return newCount;
-      });
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [props.id, props.increment]);
-
-  return <div>{count}</div>;
-}
 const Feedbacks = () => {
   return (
     //  <div className='mt-12 bg-black-100 rounded-[20px]'>
@@ -69,22 +51,35 @@ const Feedbacks = () => {
     //   </div>
 
     //  </div>
-    <div className="flex flex-wrap gap-4 justify-center flex-col sm:flex-row ">
-     <div className="border p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card" >
-        <h2 className="text-center">Total Productions Last Year</h2>+ 100
-      </div>
-      <div className="border  p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card">
-        <h2 className="text-center">Total Audio <br /> Streams</h2>
-        <div className="flex bg-tertiary ">
-          <h1>+</h1>
-          <Contador id="contador2" start={6800000} increment={3} />
+    <div className="flex flex-wrap gap-4 justify-center items-center flex-col sm:flex-row ">
+      
+      <div className="xs:w-[280px] w-full">
+        <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+          <div className="bg-tertiary rounded-[20px]  min-h-[280px] flex justify-evenly items-center flex-col p-2">
+            <h2 className="text-center">Total Productions Last Year</h2><h1 className="text-bold text-[48px]">+ 100</h1>
+          </div>
         </div>
       </div>
-      <div className="border  p-6 w-[246px] h-[246px] flex flex-col gap-4 items-center shadow-card">
-        <h2 className="text-center">Total Youtube Audio Streams</h2>
-        <div className="flex">
-          <h1>+</h1>
-          <Contador id="contador3" start={4200000} increment={2} />
+      <div className="xs:w-[280px] w-full">
+        <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+          <div className="bg-tertiary rounded-[20px]  min-h-[280px] flex justify-evenly items-center flex-col">
+            <h2 className="text-center">
+              Total Audio <br /> Streams
+            </h2>
+            <div className="flex bg-tertiary ">
+              <h1 className="text-bold text-[48px]" >+6.8M</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="xs:w-[280px] w-full">
+        <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+          <div className="bg-tertiary rounded-[20px]  min-h-[280px] flex justify-evenly items-center flex-col">
+            <h2 className="text-center">Total Youtube Audio Streams</h2>
+            <div className="flex">
+              <h1 className="text-bold text-[48px]">+4.2M</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
