@@ -27,13 +27,13 @@ const Contact = () => {
     const handleSubmit = (e) => {
       e.preventDefault()
       setLoading(true);
-      emailjs.send("service_k46wpgg", "template_ryfpa8s", {
+      emailjs.send("service_yd25jv9", "template_bqzvc2d", {
         from_name: form.name,
-        to_name: 'Luciano',
+        to_name: 'Chukee',
         from_email: form.email,
         to_email: 'contact@jsmastery.com',
         message: form.message
-      }, "L0SKFwPFndZT2jCEV"
+      }, "nOdLr_5tMwrvbIbCN"
         )
         .then(()=> {
           setLoading(false);
