@@ -5,7 +5,7 @@ LINK: [https://vitorecordsarg.netlify.app/]
 
 Para poder instalar el proyecto primero deberan clonar el repositorio utilizando
  ```js
- git clone https://github.com/LuchoGiuliani/VitoRecords.git
+ git clone https://github.com/LuchoGiuliani/NewVito.git
 ```
 Luego deberan instalar las dependencias
 
