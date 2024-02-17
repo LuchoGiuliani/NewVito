@@ -1,12 +1,10 @@
 import React, {useRef} from "react";
-
 import { motion } from "framer-motion";
-import { styles } from "../style";
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, icon }) => {
   const tiltref = useRef(null)
   return (
     <div ref={tiltref} className="xs:w-[280px] w-full">
@@ -16,23 +14,14 @@ const ServiceCard = ({ index, title, icon }) => {
       >
         <div className="bg-tertiary rounded-[20px]  min-h-[280px] flex justify-evenly items-center flex-col" options={{ max: 45, scale: 1, speed: 450 }}>
           <img src={icon} alt="title" className=" object-contain rounded-[18px]" />
-          {/* <h3 className="text-white text-[20px] font-bold text-center">{title}</h3> */}
         </div>
       </motion.div>
     </div>
   );
 }
-
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        {/* <p className={styles.sectionSubText}>Nuestro</p>
-        <h2 className={styles.sectionHeadText}>Home studio</h2> */}
-      </motion.div>
-
-     
-
       <div className="mt-20 flex flex-col justify-center gap-10 sm:flex-row">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

@@ -1,8 +1,8 @@
 import logo from "./vitoNavbar.png";
-import backend from "./mix.jpg";
+import mix from "./mix.jpg";
 import creator from "./creator.png";
-import mobile from "./vocal.jpg";
-import web from "./estudio.jpg";
+import vocal from "./vocal.jpg";
+import estudio from "./estudio.jpg";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -32,10 +32,10 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
-  backend,
+  mix,
   creator,
-  mobile,
-  web,
+  vocal,
+  estudio,
   github,
   menu,
   close,
