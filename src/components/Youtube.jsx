@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../style";
@@ -8,22 +7,24 @@ import { textVariant, zoomIn, fadeIn } from "../utils/motion";
 
 const Youtube = () => {
   return (
-    <>
+    <div className="p-6">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Videos</p>
         <h2 className={styles.sectionHeadText}>Youtube</h2>
+        <h2 className={styles.sectionSubText}>Trap</h2>
       </motion.div>
-      <div className="mt-12">
+      <div className="flex items-center justify-center mt-10 w-[200px] m-auto shadow-card sm:w-fit   bg-white p-2 ">
         <iframe
-          width="100%"
-          height="600px"
-          src="https://www.youtube.com/embed/videoseries?list=PL6T13FK9c-7OlcKl96DNgbyXH25Yt9vQe"
+          width="660"
+          height="415"
+          src="https://www.youtube.com/embed/videoseries?si=qpLToqxJ5ZfNdOrW&amp;list=PL6T13FK9c-7P20sijvMpgE9jeWSSt3F_4"
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
         ></iframe>
       </div>
-    </>
+    </div>
   );
 };
 

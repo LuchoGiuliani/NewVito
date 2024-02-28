@@ -2,22 +2,21 @@ import React from 'react'
 import {motion } from 'framer-motion'
 import {styles} from '../style'
 import { ComputersCanvas } from './canvas'
+import Feedbacks from './Feedbacks'
 
 const Hero = () => {
   return (
-   <section className='relative w-full h-screen mx-auto mt-12'>
-    <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex flex-row items-start gap-5`}>
-      <div className='flex flex-col justify-center items-center mt-5'> 
-      <div className='w-1 sm:h-80 h-40 violet-gradient ' />
-      </div>
+   <section className="flex w-full sm:items-center justify-center sm:h-screen mx-auto sm:mt-16 flex-col sm:flex-row p-6">
+    <div className="flex justify-center gap-5 p-2 mt-32 sm:mt-16">
       <div>
-        <h1 className={`${styles.heroHeadText} text-white `}>
+        <h1 className="text-white text-4xl sm:text-6xl font-bold"  >
          Vito Records 
         </h1>
-        <p className={`${styles.heroSubText} mt-2 text-white-100`}> <span className='text-[#915eff]'>Music</span>  Producer  </p>  
+        <p className="mt-2 text-xl text-white-100"> <span className='text-[#915eff]'>Music</span>  Producer  </p>  
       </div>
     </div>
-      <ComputersCanvas /> 
+      {/* <ComputersCanvas />  */}
+      <Feedbacks />
    </section>
   )
 }

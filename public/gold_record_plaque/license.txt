@@ -1,0 +1,8 @@
+Model Information:
+* title:	gold record plaque
+* source:	https://sketchfab.com/3d-models/gold-record-plaque-c52ebdea080d423e87b8b7144f2024f5
+* author:	cereal (https://sketchfab.com/skeeeyee)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

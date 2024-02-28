@@ -6,24 +6,39 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile, scale }) => {
 
-  const computer = useGLTF("./headphones/scene.gltf")
+  const computer = useGLTF("./robot/scene.gltf")
   
   return (
+    // <mesh>
+    //   <hemisphereLight intensity={5.15} groundColor="white" />
+    //   <pointLight intensity={1} />
+    //   <spotLight position={[10,-50,100]}
+    //             angle={2.5}
+    //             penumbra={0}
+    //             intensity={1}
+    //             castShadow 
+    //             // shadow-mapSize={1024}
+    //             />
+    //   <primitive object={computer.scene}
+    //               scale={[scale, scale, scale]}
+    //               position={isMobile ? [0,-1,-1.2]: [0, -2.0,-1.5]}
+    //               rotation={[1.5, 1.2, -1.5]} />
+    // </mesh>
     <mesh>
-      <hemisphereLight intensity={4.15} groundColor="white" />
-      <pointLight intensity={1} />
-      <spotLight position={[10,-50,100]}
-                angle={2.5}
-                penumbra={0}
-                intensity={1}
-                castShadow 
-                // shadow-mapSize={1024}
-                />
-      <primitive object={computer.scene}
-                  scale={[scale, scale, scale]}
-                  position={isMobile ? [0,-1,-1.2]: [0, -2.0,-1.5]}
-                  rotation={[1.5, 1.6, -1.5]} />
-    </mesh>
+    <hemisphereLight intensity={1.15} groundColor="white" />
+    <pointLight intensity={1} />
+    <spotLight position={[10,-50,100]}
+              angle={1.5}
+              penumbra={0}
+              intensity={1}
+              castShadow 
+              // shadow-mapSize={1024}
+              />
+    <primitive object={computer.scene}
+                scale={[scale, scale, scale]}
+                position={isMobile ? [0,-1,-1.2]: [0, -6.0,-1.5]}
+                rotation={[1, 1.2, -1]} />
+  </mesh>
   );
 };
 
@@ -50,9 +65,9 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     if (isMobile) {
-      setScale(0.3);
+      setScale(4);
     } else {
-      setScale(0.7);
+      setScale(8);
     }
   }, [isMobile]);
 
@@ -68,7 +83,8 @@ const ComputersCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-          autoRotate
+          
+          
         />
 
         <Computers isMobile={isMobile} scale={scale} />

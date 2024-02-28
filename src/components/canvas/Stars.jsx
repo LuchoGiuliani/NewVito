@@ -3,12 +3,28 @@ import { Canvas, useFrame } from "@react-three/fiber";
 
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 
-import * as random from "maath/random/dist/maath-random.esm";
+
 
 const Stars = (props) => {
   
   const ref = useRef();
-  const sphere = random.inSphere(new Float32Array(2000), { radius: 1.2 });
+  const generateRandomSpherePositions = (numPoints, radius) => {
+    const positions = [];
+    for (let i = 0; i < numPoints * 3; i += 3) {
+      const u = Math.random();
+      const v = Math.random();
+      const theta = 2 * Math.PI * u;
+      const phi = Math.acos(2 * v - 1);
+      const x = radius * Math.sin(phi) * Math.cos(theta);
+      const y = radius * Math.sin(phi) * Math.sin(theta);
+      const z = radius * Math.cos(phi);
+      positions.push(x, y, z);
+    }
+    return new Float32Array(positions);
+  };
+
+  // Generar las posiciones de las estrellas en una esfera con Math.random()
+  const sphere = generateRandomSpherePositions(2000, 1.2);
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;

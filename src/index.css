@@ -5,12 +5,14 @@
 @tailwind utilities;
 
 
-
+body {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -206,7 +208,47 @@
 }
 
 .shadow-card {
-  
   border-radius: 20px;
   border-image: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%) 1;
+}
+.shadow-card:hover {
+  box-shadow: -1px -9px 153px 41px rgba(191,97,255,0.53);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.shadow-card-latin {
+  border-radius: 20px;
+  border-image: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%) 1;
+}
+.shadow-card-latin:hover {
+  box-shadow: -1px -9px 153px 41px rgba(208, 207, 208, 0.53);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.works_container {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.works_page {
+ 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  
+  position: relative;
+  box-sizing: border-box;
+  
+  flex: 0 0 100%;
+  min-width: 100vw;
+  white-space: nowrap;
+  height: 100vh;
 }
