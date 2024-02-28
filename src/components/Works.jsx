@@ -73,30 +73,32 @@ const Works = () => {
   return (
     <div ref={main} className="works_container">
       <div className="h-screen works_page">
-        <motion.div variants={textVariant()}>
+        <motion.div>
           <p className={styles.sectionSubText}>playlist</p>
           <h2 className={styles.sectionHeadText}>Spotify.</h2>
           <iframe
-            className="rounded-2xl sm:w-[660px] flex items-center justify-center m-auto "
+            className="rounded-2xl sm:w-[660px] flex items-center justify-center m-auto mt-10 "
             src="https://open.spotify.com/embed/playlist/1sjw7ma7rnYcYSQiG83oee?utm_source=generator&theme=0"
             width="100%"
             height="452"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
+            allowFullScreen
           ></iframe>
         </motion.div>
       </div>
       <div className="h-screen works_page ">
-        <motion.div variants={textVariant()}>
+        <motion.div >
           <p className={styles.sectionSubText}>playlist</p>
           <h2 className={styles.sectionHeadText}>Spotify.</h2>
           <iframe
             className="rounded-2xl sm:w-[660px] flex items-center justify-center m-auto mt-10"
-            src="https://open.spotify.com/embed/playlist/1sjw7ma7rnYcYSQiG83oee?utm_source=generator&theme=0"
+            src="https://open.spotify.com/embed/playlist/1sjw7ma7rnYcYSQiG83oee?utm_source=generator&theme=dark"
             width="100%"
             height="452"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
+            allowFullScreen
           ></iframe>
         </motion.div>
       </div>

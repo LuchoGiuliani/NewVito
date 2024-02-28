@@ -7,13 +7,13 @@ import { textVariant, zoomIn, fadeIn } from "../utils/motion";
 
 const Youtube = () => {
   return (
-    <div className="p-6">
+    <div className="">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Videos</p>
         <h2 className={styles.sectionHeadText}>Youtube</h2>
         <h2 className={styles.sectionSubText}>Trap</h2>
       </motion.div>
-      <div className="flex items-center justify-center mt-10 w-[200px] m-auto shadow-card sm:w-fit   bg-white p-2 ">
+      <div className="flex items-center justify-center mt-10 w-[200px] m-auto shadow-card sm:w-fit   ">
         <iframe
           width="660"
           height="415"
