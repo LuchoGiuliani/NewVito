@@ -38,15 +38,7 @@ const Works = () => {
     }, main); // <- Scope!
     return () => ctx.revert(); // <- Cleanup!
   }, []);
-  useEffect(() => {
-    let paneles = gsap.utils.toArray(".works_page");
-
-    gsap.to(paneles[1], {
-
-      backgroundColor:"#477"
-    })
-  }, [])
-
+ 
   useEffect(() => {
     let paneles = gsap.utils.toArray(".works_page");
     paneles.forEach((pan) => {
