@@ -10,8 +10,8 @@ const Youtube = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Videos</p>
-        <h2 className={styles.sectionHeadText}>Youtube</h2>
-        <h2 className={styles.sectionSubText}>Latin</h2>
+        <h2 className={styles.sectionHeadText}>Rkt Cumbia Latin Reggaeton</h2>
+        
       </motion.div>
       <div className="flex items-center justify-center mt-10 w-[200px] sm:w-fit m-auto shadow-card-latin ">
         <iframe

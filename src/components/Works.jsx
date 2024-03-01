@@ -26,12 +26,10 @@ const Works = () => {
         xPercent: -100 * (paneles.length - 1),
         ease: "none",    
         scrollTrigger: {
-          trigger: container,
-        
+          trigger: container,       
           pin: true,
           pinSpacer:false,
-          scrub: 1,
-          
+          scrub: 1,        
           end: "+=2500",
         },
       });
@@ -67,7 +65,7 @@ const Works = () => {
       <div className="h-screen works_page">
         <motion.div>
           <p className={styles.sectionSubText}>playlist</p>
-          <h2 className={styles.sectionHeadText}>Spotify.</h2>
+          <h2 className={styles.sectionHeadText}>BoomBap Trap Hip Hop.</h2>
           <iframe
             className="rounded-2xl sm:w-[660px] flex items-center justify-center m-auto mt-10 "
             src="https://open.spotify.com/embed/playlist/1sjw7ma7rnYcYSQiG83oee?utm_source=generator&theme=0"
@@ -82,7 +80,7 @@ const Works = () => {
       <div className="h-screen works_page ">
         <motion.div >
           <p className={styles.sectionSubText}>playlist</p>
-          <h2 className={styles.sectionHeadText}>Spotify.</h2>
+          <h2 className={styles.sectionHeadText}>Latin Cumbia Rkt Reggaeton.</h2>
           <iframe
             className="rounded-2xl sm:w-[660px] flex items-center justify-center m-auto mt-10"
             src="https://open.spotify.com/embed/playlist/1sjw7ma7rnYcYSQiG83oee?utm_source=generator&theme=dark"

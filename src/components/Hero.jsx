@@ -7,7 +7,7 @@ import Feedbacks from './Feedbacks'
 const Hero = () => {
   return (
    <section className="flex w-full sm:items-center justify-center sm:h-screen mx-auto sm:mt-16 flex-col sm:flex-row p-6">
-    <div className="flex justify-center gap-5 p-2 mt-32 sm:mt-16">
+    <div className="flex justify-center gap-5 p-2 mt-12 sm:mt-16">
       <div>
         <h1 className="text-white text-4xl sm:text-6xl font-bold"  >
          Vito Records 
