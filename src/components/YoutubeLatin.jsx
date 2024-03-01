@@ -13,15 +13,15 @@ const Youtube = () => {
         <h2 className={styles.sectionHeadText}>Rkt Cumbia Latin Reggaeton</h2>
         
       </motion.div>
-      <div className="flex items-center justify-center mt-10 w-[200px] sm:w-fit m-auto shadow-card-latin ">
+      <div className="flex items-center justify-center mt-10  m-auto shadow-card-latin sm:w-[28em] w-fit  h-[20em] ">
         <iframe
-          width="660"
-          height="415"
+          width="100%"
+          height="100%"
           src="https://www.youtube.com/embed/videoseries?si=jNeTQK8G20_rWQlw&amp;list=PL6T13FK9c-7PTOTESbRHUR-jsMfWbg1vA"
           title="YouTube video player"
-          frameborder="0"
+          
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          
         ></iframe>
       </div>
     </>

@@ -19,9 +19,7 @@ const Works = () => {
       const sections = self.selector(".works_page");
       let paneles = gsap.utils.toArray(".works_page");
       let container = document.querySelector(".works_container");
-      console.log(paneles);
-      console.log(sections);
-      console.log(container);
+     
       gsap.to(paneles, {
         xPercent: -100 * (paneles.length - 1),
         ease: "none",    
