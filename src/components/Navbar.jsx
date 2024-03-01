@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.paddingX} items-center py-5 fixed top-0 z-20 w-full flex bg-primary rounded-b-xl opacity-70 px-6`}>
+    <nav className={`${styles.paddingX} items-center py-5 fixed top-0 z-20 w-full flex bg-primary rounded-b-xl opacity-70 px-6 hover:opacity-100`}>
       <div className="items-center w-full flex justify-between mx-auto max-w-7x1">
         <Link to="/" className="flex items-center gap-2" onClick={() => handleLinkClick("")}>
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />

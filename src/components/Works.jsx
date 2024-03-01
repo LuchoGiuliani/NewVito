@@ -67,7 +67,7 @@ const Works = () => {
           <p className={styles.sectionSubText}>playlist</p>
           <h2 className={styles.sectionHeadText}>BoomBap Trap Hip Hop.</h2>
           <iframe
-            className="rounded-2xl sm:w-[660px] flex items-center justify-center m-auto mt-10 "
+            className="rounded-2xl w-fit sm:w-[660px] flex items-center justify-center m-auto mt-10 "
             src="https://open.spotify.com/embed/playlist/1sjw7ma7rnYcYSQiG83oee?utm_source=generator&theme=0"
             width="100%"
             height="452"
@@ -77,12 +77,12 @@ const Works = () => {
           ></iframe>
         </motion.div>
       </div>
-      <div className="h-screen works_page ">
+      <div className="h-screen works_page w-full ">
         <motion.div >
           <p className={styles.sectionSubText}>playlist</p>
           <h2 className={styles.sectionHeadText}>Latin Cumbia Rkt Reggaeton.</h2>
           <iframe
-            className="rounded-2xl sm:w-[660px] flex items-center justify-center m-auto mt-10"
+            className="rounded-2xl w-fit sm:w-[660px] flex items-center justify-center m-auto mt-10"
             src="https://open.spotify.com/embed/playlist/1sjw7ma7rnYcYSQiG83oee?utm_source=generator&theme=dark"
             width="100%"
             height="452"
