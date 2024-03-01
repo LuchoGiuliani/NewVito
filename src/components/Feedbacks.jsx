@@ -30,18 +30,7 @@ const Feedbacks = () => {
       <div className="w-[28em]  max-w-[12em] max-h-[12em]">
         <div className="w-full green-pink-gradient p-[0.2em] rounded-[20px] shadow-card ">
           <div className="bg-tertiary rounded-[1em]   min-h-[250px] flex justify-evenly items-center flex-col p-1 sm:p-2">
-            <h2 className="text-center">Total Productions Last Year</h2> 
-            <div className="flex items-center ">
-            <h1 className="text-4xl text-center pr-6 ">+</h1>
-            <h1 className="text-bold w-10 text-4xl num" data-val="100"></h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="w-[280px] z-10">
-        <div className="w-full green-pink-gradient p-[0.2em] rounded-[20px] shadow-card">
-          <div className="bg-tertiary rounded-[1em] min-h-[260px] sm:min-h-[280px] flex justify-evenly items-center flex-col">
-            <h2 className="text-center">
+          <h2 className="text-center">
               Total Audio <br /> Streams
             </h2>
             <div className="flex bg-tertiary ">
@@ -50,6 +39,18 @@ const Feedbacks = () => {
               <h1 className="text-4xl">M</h1>
 
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-[280px] z-10">
+        <div className="w-full green-pink-gradient p-[0.2em] rounded-[20px] shadow-card">
+          <div className="bg-tertiary rounded-[1em] min-h-[260px] sm:min-h-[280px] flex justify-evenly items-center flex-col">
+          <h2 className="text-center">Total Productions Last Year</h2> 
+            <div className="flex items-center ">
+            <h1 className="text-4xl text-center pr-6 ">+</h1>
+            <h1 className="text-bold w-10 text-4xl num" data-val="100"></h1>
+            </div>
+    
           </div>
         </div>
       </div>

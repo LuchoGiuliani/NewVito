@@ -11,7 +11,7 @@ const Earth = () => {
   return (
   <primitive 
         object={earth.scene}
-        scale={1.5}
+        scale={1.8}
         position-y={0}
         position-z={0}
           />
@@ -21,6 +21,7 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
+    className=""
       shadows
       frameloop="demand"
       gl={{ preserveDrawingBuffer: true }}
